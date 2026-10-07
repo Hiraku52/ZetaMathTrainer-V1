@@ -1,18 +1,27 @@
-## Getting Started
+# ZetaMathTrainer
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+This is an arithmetic-based project designed to sharpen the mind and train it for rapid mental calculation. It is ideal for children, young people, and adults looking to continuously improve their mental math skills. 
 
-## Folder Structure
+It features various training modes and, after every mistake, suggests corrections and the application of human logic to solve the exercises mentally. It is based on a personal project I created to help myself continuously improve my own mental calculation abilities. :)
 
-The workspace contains two folders by default, where:
+---
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+## Features
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+* **Multi-Operator Training:** Practice Addition, Subtraction, Multiplication, and Division.
+* **Human-Logic Tutor (`Trainer.java`):** Step-by-step breakdown using mental math strategies (like block subtraction and rounding) instead of paper-and-pencil algorithms.
+* **Streak & Performance Tracking (`Contador.java`):** Keeps track of correct answers and personal records.
+* **Interactive CLI Menu (`App.java`):** Easy navigation between different arithmetic modules.
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+---
 
-## Dependency Management
+## Built With
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+* **Java** (Object-Oriented Programming)
+* VS Code
+
+---
+
+## Author
+
+Created with dedication to master both mental arithmetic and software architecture.
