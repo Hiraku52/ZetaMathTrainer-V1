@@ -71,7 +71,10 @@ public class App {
                 int subtraction = x - y;
 
                 System.out.println("¿Cuanto es " + x + " - " + y + "?: ");
+                long startTime = System.currentTimeMillis();
                 int answer = input.nextInt();
+                long endTime = System.currentTimeMillis();
+                double elapsedTime = (endTime - startTime)/1000.0;
 
                 if (answer == -1 ) {
                 System.out.println("¡Gracias por jugar!");
@@ -80,9 +83,11 @@ public class App {
 
                 if (answer == subtraction) {
                     aciertosContador.ProcesarRespuesta(true);
+                    System.out.println("¡Bien hecho! Tardaste " + elapsedTime + " segundos.");
                 } else {
                     aciertosContador.ProcesarRespuesta(false);
                     trainer.explicarResta(x, y);
+                    System.out.println("Tardaste " + elapsedTime + " segundos.");
                 }
             }
             break;
@@ -95,7 +100,11 @@ public class App {
                 int multiplication = x * y;
 
                 System.out.println("¿Cuanto es " + x + " * " + y + "?: ");
+
+                long startTime = System.currentTimeMillis();
                 int answer = input.nextInt();
+                long endTime = System.currentTimeMillis();
+                double elapsedTime = (endTime - startTime)/1000.0;
 
                 if (answer == -1 ) {
                 System.out.println("¡Gracias por jugar!");
@@ -104,9 +113,11 @@ public class App {
 
                 if (answer == multiplication) {
                     aciertosContador.ProcesarRespuesta(true);
+                    System.out.println("¡Bien hecho! Tardaste " + elapsedTime + " segundos.");
                 } else {
                     aciertosContador.ProcesarRespuesta(false);
                     trainer.explicarMultiplicacion(x, y);
+                    System.out.println("Tardaste " + elapsedTime + " segundos.");
                 }
             }
                 break;
